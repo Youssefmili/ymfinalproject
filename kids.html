@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Images with Text Overlay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="image-container">
+        <div class="image-wrapper">
+            <img src="https://static.bershka.net/4/static/images/bershkastyle/style_chico_streetwear.jpg?2208&t=20240828022707&imwidth=750&impolicy=bershka-itxhigh" alt="Image 1" class="image">
+            <div class="text-overlay">streetwear</div>
+        </div>
+        <div class="image-wrapper">
+            <img src="https://static.bershka.net/4/static/images/bershkastyle/style_chico_trendy.jpg?2208&t=20240828022707&imwidth=750&impolicy=bershka-itxhigh" alt="Image 2" class="image">
+            <div class="text-overlay">trendy</div>
+        </div>
+        <div class="image-wrapper">
+            <img src="https://static.bershka.net/4/static/images/bershkastyle/style_chico_casual.jpg?2208&t=20240828022707&imwidth=750&impolicy=bershka-itxhigh" alt="Image 3" class="image">
+            <div class="text-overlay">casual</div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    /* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 30%; /* Adjust as needed */
+}
+
+.image {
+    width: 100%; /* Make the image fill the wrapper */
+    height: auto;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px; /* Position from the bottom */
+    left: 10px; /* Position from the left */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+</style>
+ 

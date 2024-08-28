@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stylestream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>stylestream</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Clothing Brand</h2>
+            <p>Discover the latest fashion trends and styles</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a fashion-forward clothing brand committed to delivering high-quality apparel.</p>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <!-- Repeat this block for each product -->
+                <div class="product-item">
+                    <img src="https://theifashion.com/wp-content/uploads/2024/03/Kids-Fashion.jpg" alt="Product 1">
+                    <h4><a href="kids.html">kids</a>
+                    <p>kids fashion</p>
+                </div>
+                <!-- End of product block -->
+            </div>
+            <div class="product-list">
+                <!-- Repeat this block for each product -->
+                <div class="product-item">
+                    <img src="data:image/jpeg;base64,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" alt="Product 1">
+                    <h4><a href="male.html">male</a>
+                    <p>male fashion</p>
+                </div>
+                <!-- End of product block -->
+            </div>
+            <div class="product-list">
+                <!-- Repeat this block for each product -->
+                <div class="product-item">
+                   <img src="https://hips.hearstapps.com/hmg-prod/images/pritika-swarup-wearing-a-brown-blusa-white-shoes-and-black-news-photo-1672741251.jpg?crop=0.668xw:1.00xh;0,0&resize=640:*
+                 
+                   " alt="">
+                   <h4><a href="female.html">female</a>
+                    <p>female fashion</p>
+                </div>
+                <!-- End of product block -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clothing Brand. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<style>
+    /* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #181a16;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #eb1d1d;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn {
+    background: rgb(2, 0, 131);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+  
+
+
+/* About Section */
+.about {
+    padding: 2rem 0;
+    background: #f4f4f4;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Products Section */
+.products {
+    padding: 2rem 0;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.product-item {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 1rem); /* Adjust the percentage as needed */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+}
+
+.product-item h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.product-item p {
+    color: #666;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+    background: #f4f4f4;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form button {
+    background: #f90;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: rgb(238, 0, 0);
+}
+
+/* Footer */
+footer {
+    background: #f72525;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+</style>
+<script>
+    // Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Form submission handling
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    alert('Form submitted!');
+
+    // Here you can handle form submission, e.g., send data to a server
+});
+
+</script>
+<script>
+   function showDetails(name, description) {
+    document.getElementById('item-name').textContent = name;
+    document.getElementById('item-description').textContent = description;
+    document.getElementById('details').style.display = 'block';
+}
+
+function closeDetails() {
+    document.getElementById('details').style.display = 'none';
+}
+ 
+    
+
+</script>

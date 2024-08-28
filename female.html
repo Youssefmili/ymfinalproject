@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+<body>
+    <header>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="https://www.designscene.net/wp-content/uploads/2020/04/ZARA-SS20-Steven-Meisel-08.jpg" alt="Header Image 1" class="carousel-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHuNKXPKFb7qxySiZIa5qBoZ1CzB8GelVhg&s" alt="Header Image 2" class="carousel-image">
+                <img src="https://i.mdel.net/i/db/2018/12/1038437/1038437-800w.jpg" alt="Header Image 3" class="carousel-image">
+                <!-- Add more images as needed -->
+            </div>
+            <button class="prev" onclick="showPreviousImage()">&#9664;</button>
+            <button class="next" onclick="showNextImage()">&#9654;</button>
+        </div>
+    </header>
+    <main>
+        <section id="clothes">
+            <!-- Example clothing items -->
+            <div class="clothing-item" onclick="showDetails('Jean balloon carpenter réglable', '37,99 €', 'https://static.bershka.net/assets/public/b0de/03da/c9f14f86824e/23217004d4ef/05015352428-a4o/05015352428-a4o.jpg?ts=1718362849753&w=800')">
+                <img src="https://static.bershka.net/assets/public/3fc1/77e2/bdcc46a09297/955a50b51748/05015352428-a3f/05015352428-a3f.jpg?ts=1720690150871&w=800" alt="Clothing Item 1">
+            </div>
+            <div class="clothing-item" onclick="showDetails('Jean baggy', '39,99 €.', 'https://static.bershka.net/assets/public/52f2/2aef/24dd49798ca9/1e1c9826d3bf/05026352433-a4o/05026352433-a4o.jpg?ts=1718365618529&w=800')">
+                <img src="https://static.bershka.net/assets/public/0cc5/8e3d/fa354f119064/650f03085b12/05026352433-a3f/05026352433-a3f.jpg?ts=1719571037308&w=800" alt="Clothing Item 2">
+            </div>
+           
+            </div>
+            <div class="clothing-item" onclick="showDetails(' Jean skater ', '37,99 €', 'https://static.bershka.net/assets/public/1b52/e18a/c97d4fbba149/97c4067176d7/05014171800-a4o/05014171800-a4o.jpg?ts=1718362641493&w=800')"></div>
+         
+                <img src="https://static.bershka.net/assets/public/df6d/3469/60404d6e8cc8/b55a8028b442/05014171800-a3f/05014171800-a3f.jpg?ts=1718362667331&w=800" alt="Clothing Item 4">
+            </div>
+            <div class="clothing-item" onclick="showDetails('T-shirt manches courtes boxy imprimé Ford', '17,99 €.', 'https://static.bershka.net/4/photos2/2024/V/0/2/p/2995/130/800/2995130800_2_4_0.jpg?imwidth=800&ts=1712744097387')">
+                <img src="https://static.bershka.net/4/photos2/2024/V/0/2/p/2995/130/800/2995130800_1_1_0.jpg?imwidth=800&ts=1712744151625" alt="Clothing Item 5">
+            </div>
+            <div class="clothing-item" onclick="showDetails('T-shirt manches courtes boxy fit imprimé', '12,99 €', 'https://static.bershka.net/4/photos2/2024/V/0/2/p/2954/589/251/2954589251_2_4_0.jpg?imwidth=800&ts=1711015468424')">
+                <img src="https://static.bershka.net/4/photos2/2024/V/0/2/p/2954/589/251/2954589251_1_1_0.jpg?imwidth=800&ts=1711015499640" alt="Clothing Item 6">
+            </div>
+            <div class="clothing-item" onclick="showDetails('T-shirt boxy manches courtes imprimé', '15,99 €', 'https://static.bershka.net/4/photos2/2024/I/0/2/p/8021/538/501/8021538501_2_4_0.jpg?imwidth=800&ts=1716380743622')">
+                <img src="https://static.bershka.net/4/photos2/2024/I/0/2/p/8021/538/501/8021538501_2_1_0.jpg?imwidth=800&ts=1716380719381" alt="Clothing Item 6">
+            </div>
+            <div class="clothing-item" onclick="showDetails('T-shirt manches courtes boxy gaufré imprimé', '19,99 €', 'https://static.bershka.net/assets/public/aec5/cbe9/d337401dba83/aad7788dc106/08042538800-a4o/08042538800-a4o.jpg?ts=1720435057012&w=800')">
+
+                <img src="https://static.bershka.net/assets/public/9ade/d841/5dbc4c5e813f/53a6524023f5/08042538800-p/08042538800-p.jpg?ts=1720435003590&w=800" alt="Clothing Item 6">
+            </div>
+            <div class="clothing-item" onclick="showDetails('T-shirt manches courtes oversize imprimé', '29,99 €', 'https://static.bershka.net/assets/public/37ac/794a/b829464fa43b/90330b3f3942/08014492250-a4o/08014492250-a4o.jpg?ts=1718177513271&w=800')">
+                <img src="https://static.bershka.net/assets/public/ed48/a9b5/bc4c4897940a/db01c13b199e/08014492250-a1t/08014492250-a1t.jpg?ts=1718970484390&w=800" alt="Clothing Item 6">
+            </div>
+            <div class="clothing-item" onclick="showDetails('T-shirt manches courtes mesh sport', '29,99 €', 'https://static.bershka.net/assets/public/bc7a/7007/890345358e35/690ccad2ced3/08065443400-a4o/08065443400-a4o.jpg?ts=1723473371655&w=800')">
+
+                <img src="https://static.bershka.net/assets/public/768e/8f75/05a2487e9e50/5f551f5f927d/08065443400-p/08065443400-p.jpg?ts=1723473341286&w=800" alt="Clothing Item 6">
+            </div>
+            <div class="clothing-item" onclick="showDetails('Sweat capuche sport', '39,99 €', 'https://static.bershka.net/assets/public/3c70/02de/924842afbf41/91377c95b188/07382003251-a4o/07382003251-a4o.jpg?ts=1723473536600&w=800')">
+                <img src="https://static.bershka.net/assets/public/df1b/7322/088942a98e6f/256d7c8ef4b4/07382003251-p/07382003251-p.jpg?ts=1723473524903&w=800" alt="Clothing Item 6">
+            </div>
+            <div class="clothing-item" onclick="showDetails('Sweat effet délavé double manche', '35,99 €', 'https://static.bershka.net/assets/public/582c/cdb5/fc3f4c918f3f/3f544f525262/07374732810-a4o/07374732810-a4o.jpg?ts=1722433231820&w=800')">
+                <img src="https://static.bershka.net/assets/public/1aac/653b/f2ce43a9a813/21481f16c1f3/07374732810-a2d/07374732810-a2d.jpg?ts=1722433283336&w=800" alt="Clothing Item 6">
+            </div>
+            <div class="clothing-item" onclick="showDetails('Sweat capuche', '25,99 €', 'https://static.bershka.net/assets/public/2dd8/c2e5/9d6541b8b417/ecea76d9716a/07371498800-a4o/07371498800-a4o.jpg?ts=1719323679315&w=800')">
+
+                <img src="https://static.bershka.net/assets/public/4ca8/fea1/18c048d59df8/fd095a25997b/07371498800-a3o/07371498800-a3o.jpg?ts=1720538111931&w=800" alt="Clothing Item 6">
+            </div>
+            <div class="clothing-item" onclick="showDetails('Pull imprimé', '39,99 €', 'https://static.bershka.net/assets/public/6546/21c1/9a62459283fc/0299a229ced7/07321653800-a4o/07321653800-a4o.jpg?ts=1722342484356&w=800')">
+                <img src="https://static.bershka.net/assets/public/26c2/68ab/4e7b4792b6d7/594decbf3222/07321653800-a1t/07321653800-a1t.jpg?ts=1722342455997&w=800" alt="Clothing Item 6">
+            </div>
+            
+            <div class="clothing-item" onclick="showDetails('T-shirt manches courtes mesh imprimé', '29,99 €', 'https://static.bershka.net/assets/public/6c08/13b4/0b4646308ae0/59f901fce791/07976623800-a4o/07976623800-a4o.jpg?ts=1721047105438&w=800')">
+
+                <img src="https://static.bershka.net/assets/public/4de6/1bc7/799949a79d84/627ef990eb31/07976623800-a3o/07976623800-a3o.jpg?ts=1721047117780&w=800" alt="Clothing Item 6">
+            </div>
+
+            
+            
+        </section>
+    </main>
+    <div id="details" class="details-popup">
+        <span class="close" onclick="closeDetails()">&times;</span>
+        <img id="popup-image" src="" alt="Clothing Image">
+        <h2 id="item-name"></h2>
+        <p id="item-description"></p>
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clothing Collection</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="https://mediaslide-europe.storage.googleapis.com/uno/pictures/2789/38816/large-1532678223-ffedb95e8f2226add7fa8f515475b1ad.jpg" alt="Header Image 1" class="carousel-image">
+                    <img src="header-image2.jpg" alt="Header Image 2" class="carousel-image">
+                    <img src="header-image3.jpg" alt="Header Image 3" class="carousel-image">
+                    <!-- Add more images as needed -->
+                </div>
+                <button class="prev" onclick="showPreviousImage()">&#9664;</button>
+                <button class="next" onclick="showNextImage()">&#9654;</button>
+            </div>
+
+        </header>
+       
+   
+</body>
+</html>
+<style>
+    /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header and Carousel */
+header {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transform: translateY(-50%);
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Clothing Items */
+#clothes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.clothing-item {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.clothing-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clothing-item:hover {
+    transform: scale(1.05);
+}
+
+/* Details Popup */
+.details-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.details-popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.details-popup img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+      /* General Styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Header and Carousel */
+    header {
+        position: relative;
+        width: 100%;
+        height: 300px; /* Adjust height as needed */
+        overflow: hidden;
+    }
+    
+    .carousel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .carousel-images {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 1s ease-in-out;
+    }
+    
+    .carousel-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    
+    button {
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        transform: translateY(-50%);
+    }
+    
+    button.prev {
+        left: 10px;
+    }
+    
+    button.next {
+        right: 10px;
+    }
+    
+    /* Clothing Items */
+    #clothes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .clothing-item {
+        width: 150px; /* Adjust size as needed */
+        height: 150px; /* Adjust size as needed */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .clothing-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .clothing-item:hover {
+        transform: scale(1.05);
+    }
+    
+    /* Details Popup */
+    .details-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        z-index: 1000;
+    }
+    
+    .details-popup .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .details-popup img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+</style>
+<script>
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel-image');
+const totalImages = images.length;
+const carouselImages = document.querySelector('.carousel-images');
+
+// Function to show the next image
+function showNextImage() {
+    currentIndex = (currentIndex + 1) % totalImages;
+    updateCarousel();
+}
+
+// Function to show the previous image
+function showPreviousImage() {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    updateCarousel();
+}
+
+// Function to update the carousel
+function updateCarousel() {
+    carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Initialize carousel to rotate automatically every 3 seconds
+setInterval(showNextImage, 3000);
+
+// Optional: Add event listeners for carousel controls
+document.querySelector('.prev').addEventListener('click', showPreviousImage);
+document.querySelector('.next').addEventListener('click', showNextImage);
+
+// Function to show details popup
+function showDetails(name, description, imageUrl) {
+    document.getElementById('item-name').textContent = name;
+    document.getElementById('item-description').textContent = description;
+    document.getElementById('popup-image').src = imageUrl;
+    document.getElementById('details').style.display = 'block';
+}
+
+// Function to close the details popup
+function closeDetails() {
+    document.getElementById('details').style.display = 'none';
+}
+
+    
+</script>
+
+             
